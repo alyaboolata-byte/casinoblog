@@ -1,0 +1,21 @@
+{
+  "name": "CasinoBlog.ru",
+  "short_name": "CasinoBlog",
+  "description": "Обзоры и стратегии 1win казино",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0f1c",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/images/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}
