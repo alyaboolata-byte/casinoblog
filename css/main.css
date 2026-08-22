@@ -778,3 +778,28 @@ tbody tr:last-child td { border-bottom: none; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }
+
+/* === NAV DROPDOWN === */
+.nav-dropdown { position: relative; display: inline-flex; }
+.nav-dropdown-btn { background: none; border: none; color: var(--text-primary); font: inherit; font-size: 15px; font-weight: 500; cursor: pointer; padding: 8px 12px; transition: color var(--transition-fast); }
+.nav-dropdown-btn:hover { color: var(--accent); }
+.nav-dropdown-menu { display: none; position: absolute; top: 100%; right: 0; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); box-shadow: var(--shadow); min-width: 200px; z-index: 1001; padding: 8px 0; }
+.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+.nav-dropdown-menu a { display: block; padding: 10px 20px; color: var(--text-primary); font-size: 14px; font-weight: 500; }
+.nav-dropdown-menu a:hover { background: var(--bg-elevated); color: var(--accent); }
+@media (max-width: 768px) {
+  .nav-dropdown { display: none; }
+  .nav.open .nav-dropdown { display: block; }
+  .nav-dropdown-menu { position: static; display: block; box-shadow: none; border: none; padding: 0; }
+  .nav-dropdown-btn { display: none; }
+}
+
+/* === LINK VERIFIED BADGE === */
+.link-verified { display: flex; align-items: center; gap: 10px; background: var(--green-bg); border: 1px solid rgba(22,163,74,0.2); border-radius: var(--radius-sm); padding: 14px 20px; margin-bottom: 28px; font-size: 14px; color: var(--text-secondary); }
+.link-verified .verified-icon { font-size: 20px; flex-shrink: 0; }
+.link-verified strong { color: var(--text-primary); }
+
+/* === FOOTER TRUST LINKS === */
+.footer-trust-links { margin-bottom: 16px; font-size: 14px; }
+.footer-trust-links a { color: var(--text-muted); margin: 0 4px; }
+.footer-trust-links a:hover { color: var(--accent-light); }
