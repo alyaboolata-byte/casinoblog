@@ -35,10 +35,29 @@
 <header class="header">
 <div class="header-inner">
 <a href="/" class="logo">Casino<span>Blog</span></a>
-<nav class="nav" id="mainNav"><a href="/">Главная</a><a href="/obzor/">Обзор</a><a href="/bonus/">Бонусы</a><a href="/zerkalo/">Зеркало</a><a href="/registraciya/">Регистрация</a><a href="/prilozhenie/">Приложение</a><a href="/kazino/">Казино</a><a href="/stavki/">Ставки</a><a href="/aviator/">Aviator</a><a href="/otzyvy/">Отзывы</a></nav>
+<nav class="nav" id="mainNav">
+<a href="/">Главная</a>
+<a href="/obzor/">Обзор</a>
+<a href="/bonus/">Бонусы</a>
+<a href="/zerkalo/">Зеркало</a>
+<a href="/kazino/">Казино</a>
+<a href="/stavki/">Ставки</a>
+<div class="nav-dropdown">
+<button class="nav-dropdown-btn" onclick="this.parentElement.classList.toggle('open')">Ещё ▾</button>
+<div class="nav-dropdown-menu">
+<a href="/registraciya/">Регистрация</a>
+<a href="/prilozhenie/">Приложение</a>
+<a href="/aviator/">Aviator</a>
+<a href="/otzyvy/">Отзывы</a>
+<a href="/1win-promokod-2026/">Промокоды</a>
+<a href="/vyvod-sredstv/">Вывод</a>
+<a href="/blog/">Блог</a>
+</div>
+</div>
+</nav>
 <div class="header-buttons">
-<a href="https://one-vv793.com/casino/list?open=register&p=1q8d" class="btn-header-login" rel="nofollow noopener" target="_blank">Вход</a>
-<a href="https://one-vv793.com/casino/list?open=register&p=1q8d" class="btn-header-reg" rel="nofollow noopener" target="_blank">Регистрация</a>
+<a href="https://one-vv793.com/casino/list?open=register&p=1q8d&sub_id=1win-popolnenie-s-telefona_cta1" class="btn-header-login" rel="nofollow noopener" target="_blank">Вход</a>
+<a href="https://one-vv793.com/casino/list?open=register&p=1q8d&sub_id=1win-popolnenie-s-telefona_cta2" class="btn-header-reg" rel="nofollow noopener" target="_blank">Регистрация</a>
 </div>
 <button class="nav-toggle" onclick="document.getElementById('mainNav').classList.toggle('open')" aria-label="Меню">
 <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -109,7 +128,7 @@
 <h3>Лимиты для новых абонентов</h3>
 <p>Операторы связи часто устанавливают пониженные лимиты на мобильные платежи для новых SIM-карт в первые 90 дней использования — это мера против мошенничества с использованием подставных номеров. Если ваш номер зарегистрирован недавно, максимальная сумма разового пополнения может быть ограничена суммой в 1000-3000 рублей независимо от стандартных лимитов оператора. Полные лимиты открываются автоматически после истечения испытательного периода. Также стоит учитывать, что для корпоративных SIM-карт и номеров, оформленных на юридическое лицо, услуга мобильных платежей в адрес букмекерских контор может быть полностью заблокирована политикой оператора — в таком случае потребуется использовать личный номер, оформленный на физическое лицо.</p>
 
-<p style="text-align:center;margin:28px 0;"><a href="https://one-vv793.com/casino/list?open=register&p=1q8d" class="cta-btn cta-btn-green cta-pulse" rel="nofollow noopener" target="_blank">Пополнить счёт на 1win</a></p>
+<p style="text-align:center;margin:28px 0;"><a href="https://one-vv793.com/casino/list?open=register&p=1q8d&sub_id=1win-popolnenie-s-telefona_cta3" class="cta-btn cta-btn-green cta-pulse" rel="nofollow noopener" target="_blank">Пополнить счёт на 1win</a></p>
 
 <h2>Что делать, если платёж завис в обработке</h2>
 <p>Иногда мобильный платёж может «зависнуть» в статусе обработки дольше стандартных 5 минут. В этом случае не стоит повторять платёж немедленно — сначала проверьте статус списания в личном кабинете оператора связи. Если средства списаны с баланса телефона, но не зачислены на счёт 1win в течение 30 минут, обратитесь в поддержку букмекера с приложением скриншота о списании средств. Специалисты поддержки проверят транзакцию по идентификатору платежа и зачислят средства вручную либо инициируют возврат, если платёж не дошёл до платёжного шлюза.</p>
@@ -154,8 +173,19 @@
 <footer class="footer">
 <div class="footer-inner">
 <p>© 2024–2026 CasinoBlog.ru</p>
-<p><a href="/karta-sajta/">Карта сайта</a></p>
+<nav class="footer-trust-links"><a href="/o-proekte/">О проекте</a> · <a href="/kontakty/">Контакты</a> · <a href="/politika-konfidencialnosti/">Конфиденциальность</a> · <a href="/partnerskoe-raskrytie/">Партнёрское раскрытие</a> · <a href="/karta-sajta/">Карта сайта</a></nav>
 </div>
 </footer>
+<script>
+document.addEventListener('click', function(e) {
+  var a = e.target.closest('a[href*="one-vv793.com"]');
+  if (!a) return;
+  var url = new URL(a.href);
+  var subId = url.searchParams.get('sub_id') || 'unknown';
+  if (typeof ym === 'function') {
+    ym(108511387, 'reachGoal', 'cta_click', {sub_id: subId, page: location.pathname});
+  }
+});
+</script>
 </body>
 </html>

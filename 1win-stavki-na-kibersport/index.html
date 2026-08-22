@@ -35,10 +35,29 @@
 <header class="header">
 <div class="header-inner">
 <a href="/" class="logo">Casino<span>Blog</span></a>
-<nav class="nav" id="mainNav"><a href="/">Главная</a><a href="/obzor/">Обзор</a><a href="/bonus/">Бонусы</a><a href="/zerkalo/">Зеркало</a><a href="/registraciya/">Регистрация</a><a href="/prilozhenie/">Приложение</a><a href="/kazino/">Казино</a><a href="/stavki/">Ставки</a><a href="/aviator/">Aviator</a><a href="/otzyvy/">Отзывы</a></nav>
+<nav class="nav" id="mainNav">
+<a href="/">Главная</a>
+<a href="/obzor/">Обзор</a>
+<a href="/bonus/">Бонусы</a>
+<a href="/zerkalo/">Зеркало</a>
+<a href="/kazino/">Казино</a>
+<a href="/stavki/">Ставки</a>
+<div class="nav-dropdown">
+<button class="nav-dropdown-btn" onclick="this.parentElement.classList.toggle('open')">Ещё ▾</button>
+<div class="nav-dropdown-menu">
+<a href="/registraciya/">Регистрация</a>
+<a href="/prilozhenie/">Приложение</a>
+<a href="/aviator/">Aviator</a>
+<a href="/otzyvy/">Отзывы</a>
+<a href="/1win-promokod-2026/">Промокоды</a>
+<a href="/vyvod-sredstv/">Вывод</a>
+<a href="/blog/">Блог</a>
+</div>
+</div>
+</nav>
 <div class="header-buttons">
-<a href="https://one-vv793.com/casino/list?open=register&p=1q8d" class="btn-header-login" rel="nofollow noopener" target="_blank">Вход</a>
-<a href="https://one-vv793.com/casino/list?open=register&p=1q8d" class="btn-header-reg" rel="nofollow noopener" target="_blank">Регистрация</a>
+<a href="https://one-vv793.com/casino/list?open=register&p=1q8d&sub_id=1win-stavki-na-kibersport_cta1" class="btn-header-login" rel="nofollow noopener" target="_blank">Вход</a>
+<a href="https://one-vv793.com/casino/list?open=register&p=1q8d&sub_id=1win-stavki-na-kibersport_cta2" class="btn-header-reg" rel="nofollow noopener" target="_blank">Регистрация</a>
 </div>
 <button class="nav-toggle" onclick="document.getElementById('mainNav').classList.toggle('open')" aria-label="Меню">
 <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -109,7 +128,7 @@
 <h3>Важность букмекерской линии до матча</h3>
 <p>Движение коэффициентов перед началом матча часто указывает на инсайдерскую информацию о составе команды или тактике. Если коэффициент на фаворита резко снижается за несколько часов до матча без видимых причин, это может сигнализировать о крупных ставках профессиональных игроков, обладающих дополнительной информацией. Отслеживание динамики линии — полезный дополнительный инструмент анализа для опытных беттеров. Сравнивайте открывающие и текущие коэффициенты перед матчем — резкие движения без очевидных причин часто говорят больше, чем публичная статистика и новости о составах команд.</p>
 
-<p style="text-align:center;margin:28px 0;"><a href="https://one-vv793.com/casino/list?open=register&p=1q8d" class="cta-btn cta-btn-green cta-pulse" rel="nofollow noopener" target="_blank">Сделать ставку на киберспорт</a></p>
+<p style="text-align:center;margin:28px 0;"><a href="https://one-vv793.com/casino/list?open=register&p=1q8d&sub_id=1win-stavki-na-kibersport_cta3" class="cta-btn cta-btn-green cta-pulse" rel="nofollow noopener" target="_blank">Сделать ставку на киберспорт</a></p>
 
 <h2>Фрибеты и специальные акции на киберспорт</h2>
 <p>1win регулярно проводит акции, приуроченные к крупным киберспортивным турнирам — повышенные коэффициенты на определённые матчи, страхование ставки (возврат при проигрыше экспресса из-за одного события), фрибеты за регистрацию в период проведения турнира. Такие акции особенно активны во время финалов The International и Major по CS2, когда интерес к киберспортивным ставкам достигает пика.</p>
@@ -154,8 +173,19 @@
 <footer class="footer">
 <div class="footer-inner">
 <p>© 2024–2026 CasinoBlog.ru</p>
-<p><a href="/karta-sajta/">Карта сайта</a></p>
+<nav class="footer-trust-links"><a href="/o-proekte/">О проекте</a> · <a href="/kontakty/">Контакты</a> · <a href="/politika-konfidencialnosti/">Конфиденциальность</a> · <a href="/partnerskoe-raskrytie/">Партнёрское раскрытие</a> · <a href="/karta-sajta/">Карта сайта</a></nav>
 </div>
 </footer>
+<script>
+document.addEventListener('click', function(e) {
+  var a = e.target.closest('a[href*="one-vv793.com"]');
+  if (!a) return;
+  var url = new URL(a.href);
+  var subId = url.searchParams.get('sub_id') || 'unknown';
+  if (typeof ym === 'function') {
+    ym(108511387, 'reachGoal', 'cta_click', {sub_id: subId, page: location.pathname});
+  }
+});
+</script>
 </body>
 </html>
