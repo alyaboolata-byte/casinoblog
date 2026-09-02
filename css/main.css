@@ -87,7 +87,10 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .logo span { color: var(--text-primary); font-weight: 400; }
 
-.nav { display: flex; gap: 2px; align-items: center; flex-wrap: nowrap; overflow-x: auto; }
+.nav { display: flex; gap: 2px; align-items: center; flex-wrap: nowrap; overflow: visible; }
+/* overflow здесь обязан быть visible: overflow-x:auto делает overflow-y тоже auto,
+   и абсолютное меню «Ещё» обрезается высотой самой шапки (42px).
+   Мобильная панель ниже 1024px свой overflow-y:auto задаёт отдельно. */
 .nav::-webkit-scrollbar { display: none; }
 
 .nav a {
