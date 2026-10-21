@@ -70,5 +70,6 @@
         }
       ]
     }
-  ]
+  ],
+  "buildCommand": "python3 .indexnow/prepare.py ."
 }

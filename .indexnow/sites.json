@@ -1,0 +1,15 @@
+{
+  "project": "casinoblog-work",
+  "sites": [
+    {
+      "host": "casinoblog.ru",
+      "projectId": "prj_sPStdqP3R3e7gNfx68slnK8ij3NU",
+      "key": "fd030f81bb1877aa8be968e2f993f279",
+      "keyLocation": "https://casinoblog.ru/fd030f81bb1877aa8be968e2f993f279.txt",
+      "markerUrl": "https://casinoblog.ru/indexnow-deployment.json",
+      "fallbackUrls": [
+        "https://casinoblog.ru/"
+      ]
+    }
+  ]
+}
